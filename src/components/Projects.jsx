@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section id="#projects" className="pt-32 pb-8  bg-slate-900 px-6">
       <h3 className="text-white text-4xl pb-12 pt-6 font-bold text-center">
-        My <span>Works</span>
+        My <span className="text-purple-900">Projects</span>
       </h3>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-y-4 md:gap-x-4 text-white">
         <div className="shadow-lg p-3 shadow-slate-800 rounded-3xl">

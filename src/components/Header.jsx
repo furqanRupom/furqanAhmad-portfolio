@@ -1,8 +1,8 @@
 "use client";
-import { FaHome, FaUser } from "react-icons/fa";
+import { FaHome, FaUser, } from "react-icons/fa";
 import { HiViewGridAdd } from "react-icons/hi";
 import { GoProjectSymlink } from "react-icons/go";
-import { GrContactInfo } from "react-icons/gr";
+import { MdOutlineMessage } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import {
   Link,
@@ -37,7 +37,7 @@ const Header = () => {
     },
     {
       path: "#contact",
-      name: <GrContactInfo />,
+      name: <MdOutlineMessage />,
     },
   ];
 
@@ -66,8 +66,8 @@ const Header = () => {
 
   return (
     <div className="z-20 flex justify-center lg:justify-around lg:backdrop-blur-md lg:fixed lg:w-full mx-auto">
-      <h3 className="hidden lg:block text-5xl text-center lg:text-left py-5  font-bold text-white f">
-        FAV
+      <h3 className="hidden lg:block text-5xl text-center lg:text-left py-5  font-bold text-white ">
+        <span className="text-purple-900">F</span>urqan
       </h3>
 
       {/* mobile devices */}
