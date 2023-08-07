@@ -41,7 +41,7 @@ const Banner = () => {
 
           <div className=" mt-8 sm:mt-4 lg:mt-16 flex space-x-3 items-center lg:items-baseline justify-center lg:justify-normal">
             <div className="bg-purple-900 text-white lg:font-bold px-3 py-1 md:px-7 md:py-3 hover:bg-gray-400 hover:text-purple-900 duration-200 rounded-lg">
-              <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1vCkKOCzSq-P-oivk0BgfcnY0fd3YJNOh/view?usp=drive_link">
+              <a download target="_blank" rel="noopener noreferrer" href="/myResume.pdf">
                 <button>Download Resume</button>
               </a>
             </div>

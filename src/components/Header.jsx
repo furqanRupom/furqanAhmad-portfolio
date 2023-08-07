@@ -67,7 +67,7 @@ const Header = () => {
   return (
     <div className="z-20 flex justify-center lg:justify-around lg:backdrop-blur-md lg:fixed lg:w-full mx-auto">
       <h3 className="hidden lg:block text-5xl text-center lg:text-left py-5  font-bold text-white ">
-        <span className="text-purple-900">F</span>urqan
+        <span className="text-purple-900 ">F</span>AB
       </h3>
 
       {/* mobile devices */}
@@ -109,8 +109,8 @@ const Header = () => {
             <li
               className={
                 path === pathname
-                  ? "text-white bg-red-500 p-3  text-xl cursor-pointer"
-                  : "text-white text-xl p-2 rounded-md cursor-pointer  hover:text-purple-500 duration-200"
+                  ? "text-white bg-red-500 p-3  text-xl cursor-pointer "
+                  : "text-white font-semibold text-lg p-2 rounded-md cursor-pointer uppercase hover:text-purple-500 duration-200"
               }
               key={path}
             >

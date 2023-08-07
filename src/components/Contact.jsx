@@ -1,7 +1,5 @@
 "use client";
 import { MdMail, MdPhone } from "react-icons/md";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import {
@@ -14,13 +12,14 @@ import {
   FaLinkedin,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { Toaster } from "react-hot-toast";
+import { toast } from "react-toastify";
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
+    toast.success("Email Sent Successfully!")
     e.preventDefault();
-    const form = e.target;
-
     emailjs
       .sendForm(
         "service_2zyzrqx",
@@ -31,6 +30,8 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+
+
         },
         (error) => {
           console.log(error.text);
@@ -132,7 +133,10 @@ const Contact = () => {
         </div>
       </div>
 
-      <ToastContainer />
+      <Toaster
+  position="bottom-center"
+  reverseOrder={false}
+/>
     </section>
   );
 };

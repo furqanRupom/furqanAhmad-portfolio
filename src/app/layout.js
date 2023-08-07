@@ -1,17 +1,16 @@
 import Header from '@/components/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
-import { Sora } from 'next/font/google'
+import { Sora,Barlow } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
-const sora = Sora({subsets:['latin']},{weight:[
-  "400",
-  "500",
-  "600",
-  "700",
-  "800",
-  "900",
-]})
+const barlow = Barlow({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+
+
 
 export const metadata = {
   title: "Furqan Ahmad Portfolio",
@@ -21,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className="scroll-smooth" lang="en">
-      <body className={`${sora.className} `}>
+      <body className={`${barlow.className} `}>
         <Header />
         {children}
         </body>
